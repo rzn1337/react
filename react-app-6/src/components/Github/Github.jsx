@@ -9,10 +9,10 @@ function Github() {
     //     fetch('https://api.github.com/users/rzn1337').then(res => res.json()).then(res => setData(res))
     // }, [])
   return (
-    <div className="bg-pink-500 text-white text-center text-2xl">Github Followers: {data.followers}
-        <img src={data.avatar_url} alt="pic" width={500} />
-    </div>
-    
+    <>
+    <div className="bg-pink-500 text-white text-center text-2xl">Github Followers: {data.followers}</div>
+    <img src={data.avatar_url} alt="pic" width={500} />
+    </>   
   )
 }
 
